@@ -13,14 +13,9 @@ export ANT_HOME=/usr/local/ant-1.8.2
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export PATH="$PATH:/usr/local/sbin"
-export PATH="$PATH:/Applications/Flash Player Debugger.app/Contents/MacOS"
 export PATH="$PATH:/adchemy/bin" 
 export PATH="$PATH:$ANT_HOME"
-export PATH="$PATH:$ADL_HOME/bin"
-export PATH="$PATH:/usr/local/android-sdk-macosx/platform-tools"
-export PATH="$PATH:/usr/local/Cellar/node/0.6.10/node_modules/uglify-js/bin"
-export PATH="$PATH:/Users/mcohen/.rvm/gems/ruby-1.9.3-p0/bin"
-export PATH="$PATH:/usr/local/vert.x-1.1.0.final/bin"
+
 export PATH="$PATH:/usr/local/Cellar/git/1.7.11.1/bin"
 
 export CC=/usr/bin/gcc-4.2
