@@ -56,9 +56,6 @@ PATH=$PATH:/usr/local/Cellar/make/3.82/bin
 
 PATH=/usr/local/mysql/bin:$PATH
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
 PATH=$PATH:/usr/local/scala-2.10.0/bin
 PATH=$PATH:$HADOOP_PREFIX/bin
 PATH=$PATH:$HBASE_HOME/bin
