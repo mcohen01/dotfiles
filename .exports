@@ -9,37 +9,60 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export HISTSIZE=32768
 
 export ANT_HOME=/usr/local/ant-1.8.2
+export ANT_OPTS="-Xmx1048m -XX:+UseCompressedOops"
+
+export PROTOBUF_HOME=/usr/local
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export PATH="$PATH:/usr/local/sbin"
-export PATH="$PATH:/adchemy/bin" 
 export PATH="$PATH:$ANT_HOME"
+# export PATH="$PATH:/usr/local/Cellar/git/1.7.11.1/bin"
 
-export PATH="$PATH:/usr/local/Cellar/git/1.7.11.1/bin"
+export CC=/usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/gcc-4.2 
 
-export CC=/usr/bin/gcc-4.2
-#export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export JDK_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.6.0_31-b04-411.jdk/Contents/Home/
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/
+#export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+
+export CATALINA_HOME=/Library/Tomcat/Home
+
+export JDK_HOME=$JAVA_HOME
 export JAVA_OPTS="$JAVA_OPTS -XX:+UseCompressedOops"
 export MAVEN_OPTS=-"Xmx2048m -XX:PermSize=256m -XX:MaxPermSize=512m -XX:+UseCompressedOops"
-#export M2_HOME=/Users/mcohen/.m2/
-export ANT_OPTS="-Xmx1048m -XX:+UseCompressedOops"
+export M2_HOME=/usr/local/apache-maven-3.0.4/
+
 export NODE_PATH=/usr/local/lib/node_modules
-export GROOVY_HOME=/usr/local/Cellar/groovy/1.8.6/libexec
-export GRAILS_HOME=/usr/local/Cellar/grails/2.0.3/libexec
-#export JRUBY_HOME=/usr/local/Cellar/jruby/1.6.7/
+export GROOVY_HOME=/usr/local/Cellar/groovy/2.0.5/libexec
 export JRUBY_OPTS=--1.9
 
 export HOMEBREW_TEMP=$HOME/tmp
 export TEMP=$HOME/tmp
 
-[[ -s "/Users/mcohen/.rvm/scripts/rvm" ]] && source "/Users/mcohen/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+export HADOOP_OPTS="-Djava.security.krb5.realm= -Djava.security.krb5.kdc="
+export HADOOP_HOME=/usr/local/hadoop-1.1.2
+export HADOOP_PREFIX=/usr/local/hadoop-1.1.2
+export HBASE_HOME=/usr/local/hbase-0.94.4
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export NODE_PATH=/usr/local/share/npm/lib/node_modules
+
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:$PATH
+PATH=$PATH:/usr/local/Cellar/make/3.82/bin
+
+## moved this back to bash_profile
+## [[ -s "/Users/mcohen3/.rvm/scripts/rvm" ]] && source "/Users/mcohen3/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+## PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+PATH=/usr/local/mysql/bin:$PATH
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+PATH=$PATH:/usr/local/scala-2.10.0/bin
+PATH=$PATH:$HADOOP_PREFIX/bin
+PATH=$PATH:$HBASE_HOME/bin
+PATH=$PATH:/usr/local/elasticsearch/elasticsearch-0.20.4/bin
+PATH=$PATH:/usr/local/share/npm/bin
+
 export PATH
