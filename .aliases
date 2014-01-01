@@ -3,7 +3,12 @@ alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias mvnnotest="mvn clean install -DskipTests=true -DskipTests -DskipTest"
 alias mongorun="mongod run --config /usr/local/etc/mongod.conf"
-alias antonehost="ant -Dhost=dev-sem onehost"
+alias poststart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias poststop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias flushdns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias setm2="export M2=/usr/local/apache-maven-3.0.4/ && export M2_HOME=/usr/local/apache-maven-3.0.4/"
+alias hdfs="hadoop fs"
+alias hd=hadoop
 
 alias ..="cd .."
 alias ...="cd ../.."
